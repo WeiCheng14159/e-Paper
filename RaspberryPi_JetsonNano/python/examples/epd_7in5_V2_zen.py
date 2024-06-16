@@ -1,7 +1,6 @@
 
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
-from waveshare_epd import epd7in5_V2
 import os
 import sys
 import time
@@ -14,6 +13,7 @@ libdir = os.path.join(os.path.dirname(
 if os.path.exists(libdir):
     sys.path.append(libdir)
 
+from waveshare_epd import epd7in5_V2
 
 class Display:
     DISPLAY_WIDTH = 480
